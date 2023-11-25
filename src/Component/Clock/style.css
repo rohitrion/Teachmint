@@ -1,0 +1,23 @@
+.clock {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+
+.btn {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+
+
+.one {
+    background-color: blue;
+    color: azure;
+    cursor: pointer;
+    border: 1px solid ;
+}
