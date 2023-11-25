@@ -4,13 +4,14 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./style.css";
 const ClockComponent = () => {
+
     const [countries, setCountries] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState('');
     const [currentTime, setCurrentTime] = useState(0);
     const [isRunning, setIsRunning] = useState(true);
 
     const fetchTime = () => {
-        axios.get(`http://worldtimeapi.org/api/timezone/${selectedCountry}`)
+        axios.get(`https://worldtimeapi.org/api/timezone/${selectedCountry}`)
             .then(response => {
                 setCurrentTime(response.data.unixtime);
             })
@@ -19,7 +20,7 @@ const ClockComponent = () => {
 
     useEffect(() => {
 
-        axios.get('http://worldtimeapi.org/api/timezone')
+        axios.get('https://worldtimeapi.org/api/timezone')
             .then(response => {
                 setCountries(response.data);
 

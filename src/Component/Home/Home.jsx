@@ -39,6 +39,12 @@ const Home = () => {
         Api()
     }, [])
 
+
+    if (!post) {
+        return <div className="loading">Loading...</div>;
+    }
+
+
     return (
         <div className="container">
             <h2 className='heading'>Directory</h2>

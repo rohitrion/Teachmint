@@ -65,7 +65,7 @@ const Posts = () => {
             </Link>
             <h2 className="heading">Profile Page</h2>
 
-            <Timer />
+            <Timer id={id} />
 
             <div className="details">
                 <div>

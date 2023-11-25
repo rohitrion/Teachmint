@@ -60,7 +60,7 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    /* Updated align-items to flex-start */
+
 }
 
 .post {
@@ -68,7 +68,7 @@
     height: 350px;
     width: 300px;
     box-sizing: border-box;
-    /* Include border and padding in the width calculation */
+ 
     text-align: center;
     display: flex;
     flex-direction: column;
